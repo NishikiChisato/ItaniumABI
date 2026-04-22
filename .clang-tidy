@@ -1,0 +1,28 @@
+---
+Checks: >
+  -*,
+  google-*,
+  bugprone-*,
+  modernize-*,
+  readability-identifier-naming,
+  performance-*,
+  readability-*,
+  -modernize-use-trailing-return-type,
+  -bugprone-exception-escape,
+
+WarningsAsErrors: ''
+
+CheckOptions:
+  - key:             readability-function-size.LineThreshold
+    value:           120
+  - key:             readability-identifier-length.MinimumIdentifierLength
+    value:           3
+  - key: readability-identifier-naming.FunctionCase
+    value: PascalCase
+  - key: readability-identifier-naming.VariableCase
+    value: snake_case
+  - key: readability-identifier-naming.GlobalConstantCase
+    value: kPascalCase
+
+FormatStyle: file
+...
